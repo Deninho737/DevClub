@@ -1,0 +1,41 @@
+/* Pseudo elementos*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input {
+    border: 1px solid rgb(59, 6, 219);
+    color: rgb(238, 7, 15);
+
+}
+
+input::placeholder {
+    color: #ff1396;
+}
+
+p {
+    color: blue;
+}
+
+p::first-letter {
+    /* first-line toda a primeira linha selecionada e first-letter somente a primeira letra do texto*/
+    color: red;
+}
+
+a {
+    color: rgb(1, 1, 8);
+
+}
+
+a::before {
+    content: "💰	";
+}
+
+/* after/ before- acrescentar algum elemento antes ou depois de qualquer palavra*/
+
+a::after {
+    content: "💸";
+}
